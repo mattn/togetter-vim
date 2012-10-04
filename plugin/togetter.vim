@@ -72,7 +72,7 @@ endfunction
 
 function! s:togetter(arg)
   if a:arg =~ '^\d\+$'
-   let url = 'http://togetter.com/li/%d', a:arg)
+   let url = printf('http://togetter.com/li/%d', a:arg)
   else
    let url = a:arg
   endif
